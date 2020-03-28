@@ -41,7 +41,7 @@
         </div>
 
     </div>
-    
+
     <script type="text/javascript">
         var count = new Date("jun 1,2020 00:00:00").getTime();
         var x = setInterval(function () {
@@ -57,11 +57,12 @@
             document.getElementById("hours").innerHTML = hours;
             document.getElementById("minutes").innerHTML = minutes;
             document.getElementById("seconds").innerHTML = seconds;
-        }, 1000);
 
-        if (d <= 0) {
-            clearInterval(x);
-        }
+            if (d <= 0) {
+                clearInterval(x);
+            }
+
+        }, 1000);
     </script>
 </body>
 
